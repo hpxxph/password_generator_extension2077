@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="btn.css">
+    <title>Password_Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="global_test">Password Generator</h1>
+        <div class="pas_input">
+            <div class="pas_input_user">
+                <p id="_password" class="user_pas">*********************</p>
+                <img id="_repeat_pas" src="IconChange.png" alt="error_">
+            </div>
+        </div>
+        <button id="copy_pas" class="cybr-btn">
+            Copy_Password<span aria-hidden="_">_</span>
+            <span aria-hidden class="cybr-btn__glitch">*:;3</span>
+            <span aria-hidden class="cybr-btn__tag"><span id="_length_pas">R!#</span></span>
+        </button>
+        
+        <input id="_rangeInput" class="type_range_input" type="range" min="8" max="15">
+
+        <div class="checkbox_container">
+            <div class="upper_checkboxes">
+                <input class="checkbox_input" type="checkbox" id="checkbox1" checked>
+                <label class="checkbox_label" for="checkbox1">Uppercase</label>
+                <input class="checkbox_input" type="checkbox" id="checkbox2">
+                <label class="checkbox_label" for="checkbox2">Lowercase</label>
+            </div>
+            <div class="lower_checkboxes">
+                <input class="checkbox_input" type="checkbox" id="checkbox3">
+                <label class="checkbox_label" for="checkbox3">Numbers</label>
+                <input class="checkbox_input" type="checkbox" id="checkbox4" checked>
+                <label class="checkbox_label" for="checkbox4">Symbols</label>
+            </div>
+        </div>  
+    </div>
+    <script src="contentScript.js"></script>
+</body>
+</html>

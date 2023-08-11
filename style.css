@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: black;
+    font-family: 'Tomorrow', sans-serif;
+    color: #fff;
+    position: relative;
+}
+
+.container {
+    margin: 20px;
+}
+
+.global_test {
+    font-family: Tomorrow;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; 
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: yellow;
+    text-align: center;
+}
+
+.pas_input {
+    display: flex;
+    width: 230px;
+    padding: 7px;
+    align-items: center;
+    gap: 12px;
+    border: 2px solid #00F0FF;
+    background: rgba(0, 240, 255, 0.10);
+}
+
+.pas_input_user {
+    font-family: Tomorrow;
+    font-size: 12px;
+    font-style: normal;
+    letter-spacing: 3.2px;
+}
+
+.user_pas {
+    margin-left: 10px;
+}
+
+img {
+    position: fixed;
+    left: 232px;
+    margin: 10px;
+    cursor: pointer;
+}
+  .type_range_input {
+    margin-top: 34px ;
+    width: 100%; 
+    appearance: none; 
+    height: 5px; 
+    background: #00F0FF; 
+    outline: none; 
+
+    &::-webkit-slider-thumb {
+        appearance: none;
+        width: 20px;
+        height: 20px; 
+        background: yellow; 
+        cursor: pointer; 
+    }
+}
+
+
+.pas_input_user {
+    font-family: Tomorrow;
+    font-size: 12px;
+    font-style: normal;
+    letter-spacing: 3.2px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.pas_input_user img {
+    order: 2; 
+}
+  
+.cybr-btn:nth-of-type(2) {
+    --primary-hue: 260;
+}
+  .checkbox_container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.checkbox_input {
+    display: none;
+    margin-left: 30px;
+}
+
+.checkbox_label {
+    position: relative;
+    padding-left: 30px;
+    text-align: center; 
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 10px;
+    flex: 1; 
+    margin: 5px;
+}
+
+.checkbox_label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid yellow;
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+.checkbox_input:checked + .checkbox_label::before {
+    background-color: yellow;
+}
+
+.checkbox_label:hover::before {
+    border-color: #00F0FF;
+}
+
+.upper_checkboxes {
+    order: -1;
+}
+
+.lower_checkboxes {
+    margin-top: 20px;
+}
+
+.copy {
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
